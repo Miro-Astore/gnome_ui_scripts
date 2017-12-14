@@ -2,7 +2,8 @@
 
 firefox &
 
-sleep 1.0
-echo "slept"
+sleep 0.8
+xdotool windowactivate $(xdotool search --name firefox | tail -n 1 )
+sleep 0.2
+bash /home/miro/custom_ui_scripts/undecorate_current_window.sh
 
-bash /home/miro/.customuiscripts/undecorate_current_window.sh
